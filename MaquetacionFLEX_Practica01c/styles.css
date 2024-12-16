@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+section img{
+    max-width: 20rem;
+}
+
+section > div{
+    display: flex;
+    gap: 2rem;
+}
+
+section > div > nav{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: max-content;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: max-content;
+    
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.section-1{
+    display: flex;
+
+}
+
+.section-1 figcaption{
+    max-width: 50%;
+}
+
+
+
+.section-1 figure{
+    display: flex;
+    border: 1px solid black;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    height: 100%;
+
+}
+
+
+
+
+
+section > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+section > div > div > div:nth-child(2){ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+article figure{
+    width: min-content;
+    border: 2px solid black;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+
+section > div > div > div:nth-child(2) figcaption{ 
+    max-width: fit-content;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 2rem;
+    width: 3rem;
+}
+
+figure{
+    margin: 0;
+}

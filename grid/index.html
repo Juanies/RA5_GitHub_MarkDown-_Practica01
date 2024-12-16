@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación con Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            gap: 2rem;
+        }
+
+        section img {
+            object-fit: contain;
+            height: 13rem;
+            width: 20rem;
+        }
+
+        nav ul {
+            display: grid;
+            gap: 1rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+
+
+        .section-1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-1 figure {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            border: 1px solid black;
+            padding: 2rem;
+            text-align: center;
+            gap: 1rem;
+            place-items: center;
+
+        }
+
+        .section2 {
+            display: grid;
+            place-items: center;
+
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        article figure {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            border: 2px solid black;
+            padding: 2rem;
+            gap: 1rem;
+            display: grid;
+            align-items: center;
+            place-items: center;
+        }
+
+ 
+
+        footer {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        footer img {
+            width: 3rem;
+        }
+
+        footer div {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 1rem;
+        }
+
+        figure {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Ejemplo de Maquetación con Grid</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+   </header> 
+   <main>
+       <section>
+           <nav>
+               <ul>
+                   <li><a href="#">Enlace 1</a></li>
+                   <li><a href="#">Enlace 2</a></li>
+                   <li><a href="#">Enlace 3</a></li>
+                   <li><a href="#">Enlace 4</a></li>
+                   <li><a href="#">Enlace 5</a></li>
+                   <li><a href="#">Enlace 6</a></li>
+               </ul>
+           </nav>
+           <div>
+               <div class="section-1">
+                   <figure>
+                       <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                       <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde quae...</figcaption>
+                   </figure>
+                   <figure>
+                       <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                       <figcaption>Lorem ipsum dolor...</figcaption>
+                   </figure>
+               </div>
+               <div class="section2">
+                   <article>
+                       <figure>
+                           <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                           <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit...</figcaption>
+                       </figure>
+                   </article>
+                   <article>
+                       <figure>
+                           <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                           <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit...</figcaption>
+                       </figure>
+                   </article>
+                   <article>
+                       <figure>
+                           <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                           <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit...</figcaption>
+                       </figure>
+                   </article>
+               </div>
+               <footer>
+                   <address>
+                       <p>Juan Romero</p>
+                       <p>Almería</p>
+                   </address>
+                   <p>Las fotos han sido realizadas por Isabel</p>
+                   <div>
+                        <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                        <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                        <img src="https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg" alt="">
+                    </div>
+
+               </footer>
+           </div>
+       </section>
+   </main>
+</body>
+</html>
