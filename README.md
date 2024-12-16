@@ -5,6 +5,8 @@ Páginas web sencillas hechas con flexbox y grid
 
 ## Contenido de la publicación
 ## Desarrollo del proyecto
+En este proyecto se utilizan tecnologías modernas como Flexbox y CSS Grid para crear páginas web de diseño limpio y responsivo. La estructura es sencilla, lo que permite que los conceptos se entiendan claramente, facilitando la creación de layouts eficientes.
+
 ## Despliegue (link a la página principal)
 ## Construido con
 HTML5
